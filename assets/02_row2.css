@@ -34,7 +34,7 @@
     flex-direction: row;
 }
 
-#bucket_slider {
-    display: flex;
-    justify-content: center;
+.slider_parent {
+    width: 75%;
+    justify-self: center;
 }
