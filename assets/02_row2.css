@@ -28,13 +28,21 @@
     flex-direction: column;
 }
 
-.dropdown2_div, .fil_radio, .crit_drop, .slider_parent {
+.dropdown2_div, .fil_radio, .crit_drop {
     display: flex;
     justify-content:center;
     flex-direction: row;
 }
 
 .slider_parent {
-    width: 50%;
+    display:flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-left: -100;
+}
+
+#bucket_slider {
+    display:flex;
+    min-width: 200%;
     justify-self: center;
 }
