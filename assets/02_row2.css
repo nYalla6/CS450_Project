@@ -34,14 +34,7 @@
     flex-direction: row;
 }
 
-.slider_parent {
-    display:flex;
-    justify-content: left;
-    flex-direction: row;
-}
-
 #bucket_slider {
-    display:flex;
-    min-width: 100%;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
 }
