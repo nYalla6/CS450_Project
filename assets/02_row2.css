@@ -28,7 +28,7 @@
     flex-direction: column;
 }
 
-.dropdown2_div, .fil_radio, .crit_drop {
+.dropdown2_div, .fil_radio, .crit_drop, .slider_parent {
     display: flex;
     justify-content:center;
     flex-direction: row;
