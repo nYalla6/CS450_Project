@@ -38,11 +38,10 @@
     display:flex;
     justify-content: left;
     flex-direction: row;
-    margin-left: -100;
 }
 
 #bucket_slider {
     display:flex;
-    min-width: 200%;
+    min-width: 100%;
     justify-self: center;
 }
