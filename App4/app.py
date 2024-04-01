@@ -93,7 +93,9 @@ filter_radio = html.Div(className="fil_radio", children=[html.P("Num elements di
 #dropdown for criteria
 criteria_list = ['Human Development Index (HDI)', 'Life expectancy at birth', 'Gross national income (GNI) per capita']
 criteria_dropdown = html.Div(className="crit_drop",children=[html.P("Select Continent: "),dcc.Dropdown(id='criteria_dropdown',options=criteria_list, value=None,style=dict(width=300,marginLeft=2))])
+
 app = dash.Dash(__name__)
+server = app.server
 
 
 #### layout
@@ -264,8 +266,7 @@ def update_graph4(criteria):
     return fig
 
 
-app = dash.Dash(__name__)
-server = app.server
+
 
 if __name__ == '__main__':
     app.run_server(debug=False)
