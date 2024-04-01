@@ -263,6 +263,6 @@ def update_graph4(criteria):
                     )
     return fig
 
-if __name__ == '__main__':
-    app = dash.Dash(__name__)
-    server = app.server
+
+app = dash.Dash(__name__)
+server = app.server
