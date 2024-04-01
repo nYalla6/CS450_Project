@@ -72,7 +72,7 @@ custom_config = {
 
 # Load the my_df dataset from the csv in the folder
 # Try reading the CSV file with different encodings
-my_df = pd.read_csv('App4/country_statistics.csv', encoding='latin1')
+my_df = pd.read_csv('country_statistics.csv', encoding='latin1')
 
 #edit the GNI to be floats
 my_df['Gross national income (GNI) per capita'] = my_df['Gross national income (GNI) per capita'].str.replace(',', '').astype(float)
