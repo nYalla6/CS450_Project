@@ -7,6 +7,7 @@
     flex: 1; /* use the available space for width after padding */
     height: 500px;
     padding: 10px;
+    padding-top: 50px;
 }
 
 .row2_child1 {
@@ -26,6 +27,7 @@
     padding: 10px;
     flex: 1;
     flex-direction: column;
+    
 }
 
 .dropdown2_div, .fil_radio, .crit_drop {
@@ -37,4 +39,5 @@
 .slider_parent {
     width: 75%;
     justify-self: center;
+    padding-bottom: 50;
 }
