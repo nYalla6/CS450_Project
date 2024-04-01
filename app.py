@@ -84,7 +84,7 @@ cont_list = ["None"] + list(countries_continents.keys())
 continent_dropdown = html.Div(className="dropdown2_div",children=[html.P("Select Continent: "),dcc.Dropdown(id='ctry_dropdown',options=cont_list, value=None,style=dict(width=150,marginLeft=2))])
 # radio_items=dcc.RadioItems(id='cat_radio_items_id',options=categorical_columns, value=None,inline=True)
 
-num_buckets_slider = html.Div(className="slider_parent",children=[dcc.Slider(id='bucket_slider', min=2, max=20, value=10, step=1)])
+num_buckets_slider = html.Div(className="slider_parent",children=[html.P("Approx. Num Buckets"),dcc.Slider(id='bucket_slider', min=2, max=20, value=10, step=1)])
 
 #radio items for filter
 filter_list = ['All', 10, 20, 30]
@@ -92,7 +92,7 @@ filter_radio = html.Div(className="fil_radio", children=[html.P("Num elements di
 
 #dropdown for criteria
 criteria_list = ['Human Development Index (HDI)', 'Life expectancy at birth', 'Gross national income (GNI) per capita']
-criteria_dropdown = html.Div(className="crit_drop",children=[html.P("Select Continent: "),dcc.Dropdown(id='criteria_dropdown',options=criteria_list, value=None,style=dict(width=300,marginLeft=2))])
+criteria_dropdown = html.Div(className="crit_drop",children=[html.P("Select Criteria: "),dcc.Dropdown(id='criteria_dropdown',options=criteria_list, value=None,style=dict(width=300,marginLeft=2))])
 
 app = dash.Dash(__name__)
 server = app.server
