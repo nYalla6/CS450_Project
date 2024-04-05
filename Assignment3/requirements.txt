@@ -1,5 +1,0 @@
-gunicorn
-plotly
-dash
-matplotlib
-seaborn
